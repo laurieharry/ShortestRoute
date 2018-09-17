@@ -30,12 +30,23 @@
                 zoom: 9
             });
 
+        function addMarker(lati, long){ //function to more efficiently add markers 
             var marker = new google.maps.Marker({
-                position: { lat: -37.841936, lng: 144.935747 }, //b
+                position: { lat: lati, lng: long },
                 map: map
             });
         }
-
+        addMarker(-37.822066, 144.963454);
+        addMarker(-37.841936, 144.935747);
+        addMarker(-37.803082, 144.862707);
+        addMarker(-35.309049, 149.108155);
+        addMarker(-37.807772, 145.059477);
+            /*var marker = new google.maps.Marker({
+                position: { lat: -37.841936, lng: 144.935747 }, //b
+                map: map
+            });*/
+        }
+   
 
 
     </script>
