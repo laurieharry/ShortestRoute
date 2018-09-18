@@ -1,0 +1,25 @@
+
+CREATE TABLE rentalProperty
+    (`PropertyId` varchar(4), `Rent` int, `BranchId` varchar(3))
+;
+    
+INSERT INTO rentalProperty
+    (`PropertyId`, `Rent`, `BranchId`)
+VALUES
+    ('101', 400, '27'),
+    ('102', 450, '76'),
+    ('117', 350, '76')
+;
+
+
+CREATE TABLE Branch
+    (`BranchId` varchar(3), `BranchName` varchar(20))
+;
+    
+INSERT INTO Branch
+    (`BranchId`, `BranchName`)
+VALUES
+    ('27', 'North Melbourne'),
+    ('76', 'City')
+   
+;
